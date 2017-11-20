@@ -1,0 +1,4 @@
+* CPU-Anzeige
+* Programmicon
+* Unterscheidungsmerkmal unterschiedliche Symbole (Farben, Linie oben/unten?)
+* Einstellungen (im Rechtsklick-Menü?) für einzelne Anzeigen
