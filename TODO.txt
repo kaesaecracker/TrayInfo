@@ -2,3 +2,4 @@
 * Programmicon
 * Unterscheidungsmerkmal unterschiedliche Symbole (Farben, Linie oben/unten?)
 * Einstellungen (im Rechtsklick-Menü?) für einzelne Anzeigen
+* Fenster für Windows-Zwischenablage, welches bei Bedarf geöffnet werden kann
