@@ -30,9 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.ramIcon = new System.Windows.Forms.NotifyIcon(this.components);
-            this.refreshTimer = new System.Windows.Forms.Timer(this.components);
             this.iconMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.exitItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.refreshTimer = new System.Windows.Forms.Timer(this.components);
+            this.cpuIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.iconMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,10 +42,6 @@
             this.ramIcon.ContextMenuStrip = this.iconMenu;
             this.ramIcon.Text = "% RAM belegt";
             this.ramIcon.Visible = true;
-            // 
-            // refreshTimer
-            // 
-            this.refreshTimer.Tick += new System.EventHandler(this.RefreshTimerTick);
             // 
             // iconMenu
             // 
@@ -58,6 +55,16 @@
             this.exitItem.Name = "exitItem";
             this.exitItem.Size = new System.Drawing.Size(92, 22);
             this.exitItem.Text = "Exit";
+            // 
+            // refreshTimer
+            // 
+            this.refreshTimer.Tick += new System.EventHandler(this.RefreshTimerTick);
+            // 
+            // cpuIcon
+            // 
+            this.cpuIcon.ContextMenuStrip = this.iconMenu;
+            this.cpuIcon.Text = "% CPU ausgelastet";
+            this.cpuIcon.Visible = true;
             // 
             // HiddenForm
             // 
@@ -80,6 +87,7 @@
         private System.Windows.Forms.Timer refreshTimer;
         private System.Windows.Forms.ContextMenuStrip iconMenu;
         private System.Windows.Forms.ToolStripMenuItem exitItem;
+        private System.Windows.Forms.NotifyIcon cpuIcon;
     }
 }
 
